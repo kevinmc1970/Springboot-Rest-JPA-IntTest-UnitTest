@@ -43,7 +43,8 @@ public class StudentControllerTest {
 	List<Student> mockList = new ArrayList<Student>();	
 	String exampleStudentJSON = "{ \"name\":\"New Student\",\"description\":\"New\"}";
 
-	// testing the code in the Controller (although doesn't do much) and mocking service it calls
+	// unit-testing the code in the Controller (although doesn't do much) and mocking service it calls
+	// uses mockmvc to mock the endpoint requests
 	@Test
 	public void retrieveAllStudents() throws Exception {
 

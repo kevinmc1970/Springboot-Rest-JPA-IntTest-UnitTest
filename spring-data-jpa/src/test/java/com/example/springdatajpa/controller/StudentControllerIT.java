@@ -29,6 +29,9 @@ import com.example.springdatajpa.service.StudentService;
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = SpringDataJpaApplication.class,
 		webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+
+// with this being a test the in-memory Derby database is used rather than the actual database
+// everything else is the actual service and endpoints hit to test responses etc 
 public class StudentControllerIT {
 
 	@LocalServerPort

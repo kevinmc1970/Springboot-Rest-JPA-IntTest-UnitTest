@@ -3,6 +3,8 @@ package com.example.springdatajpa.model;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 import org.hibernate.annotations.GenericGenerator;
 
@@ -12,6 +14,8 @@ public class Student {
 	@GenericGenerator(name="system-uuid", strategy = "uuid")
 	private String id;
 	private String name;
+	@NotNull
+	@Size(min=2, message="Description should have atleast 2 characters")
 	private String description;
 	
 	public Student() {

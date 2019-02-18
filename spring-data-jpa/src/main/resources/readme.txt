@@ -1,4 +1,4 @@
-Spring Data JPA
+Spring Data JPA (and validation and used for swagger testing)
 decided to create a basic app from scratch because getting errors trying to change the other projects
 
 this is working!
